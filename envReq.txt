@@ -1,0 +1,19 @@
+PORT=
+CONNECTION_STRING=//mongoDB connection string 
+#16.4 this token is shared to accesstoken when writting an actual code then avoid writting such simple secret
+ACCESS_TOKEN_SECRET= 
+API_KEY=     //to connect with gemini
+emailUser=""
+emailPassword=""
+
+#Credentials for sending email and the same are present in json file
+
+CLIENT_ID=""
+project_id=""
+auth_uri=""
+token_uri=""
+auth_provider_x509_cert_url=""
+CLIENT_SECRET=""
+REDIRECT_URI=""
+javascript_origins=""
+REFRESH_TOKEN=""

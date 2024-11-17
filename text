@@ -1,0 +1,5 @@
+Forget password and reset password::
+
+1. Install randomstring and nodemailer(we will be using google SMTP)
+2. Shall send a forget password mail which will contain reset password mail.
+3. Created token which will hold and verify the user password
