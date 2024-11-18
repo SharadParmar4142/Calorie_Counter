@@ -165,7 +165,7 @@ const getOAuth2Client = async () => {
         from: process.env.emailUser,
         to: email,
         subject: 'Reset Password',
-        html: `<p>Hi ${username}, copy the link to <a href="http://ec2-15-206-93-136.ap-south-1.compute.amazonaws.com:8000/api/user/resetpassword?token=${token}">reset your password</a></p>`,
+        html: `<p>Hi ${username}, copy the link to <a href="http://ec2-15-206-93-136.ap-south-1.compute.amazonaws.com:3000/api/user/resetpassword?token=${token}">reset your password</a></p>`,
       };
   
       // Send email
