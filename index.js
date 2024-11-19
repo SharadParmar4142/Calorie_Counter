@@ -1,5 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv').config();
+const cors = require('cors'); // Import cors
 const errorHandler = require('./middleware/errorHandler');
 const connectDb = require('./config/dbConnection');
 
@@ -10,6 +11,9 @@ connectDb();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Enable CORS
+app.use(cors()); // Add CORS middleware here
+app.use(cors({origin:'*'}));
 // Middleware to parse JSON
 app.use(express.json());
 

@@ -18,7 +18,7 @@ router.post("/forgetpassword",forgotPassword)
 
 router.delete("/login/delete",validateToken,deleteUser)
 
-//router.post("/login/logout",logout)//to do
+// router.post("/login/logout",logout)//to do
 
 router.post("/login/run",validateToken,searchimg);
 
