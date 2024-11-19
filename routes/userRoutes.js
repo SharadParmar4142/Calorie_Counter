@@ -16,15 +16,15 @@ router.post("/login",loginUser)
 
 router.post("/forgetpassword",forgotPassword)
 
-router.delete("/login/delete",validateToken,deleteUser)
+router.delete("/login/delete",deleteUser)
 
 // router.post("/login/logout",logout)//to do
 
-router.post("/login/run",validateToken,searchimg);
+router.post("/login/run",searchimg);
 
 router.get("/resetpassword",resetPassword)
 
-router.get("/current",validateToken,currentUser) //17.2  //Tells which user is currently loggedin\
+router.get("/current",currentUser) //17.2  //Tells which user is currently loggedin\
 
 
 
